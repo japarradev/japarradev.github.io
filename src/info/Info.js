@@ -1,11 +1,7 @@
 import self from "../img/self.png"
-import mock1 from "../img/mock1.png"
-import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
-import mock4 from "../img/mock4.png"
-import mock5 from "../img/mock5.png"
 import imgNutriarepa from "../img/nutriarepa.png"
-
+import imgAviento from "../img/aviento.png"
+import imgParapenteChicamocha from "../img/parapente-chicamocha.png"
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
 
@@ -109,12 +105,13 @@ export const info = {
         },
         {
             title: "Aviento",
-            image: mock2
+            image: imgAviento
         },
+      
         {
             title: "Parapente chicamocha",
             live: "https://parapentechicamocha.com/",
-            image: mock3
+            image: imgParapenteChicamocha
         },
         
     ]
