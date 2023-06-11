@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.e2e0b88c.css",
+    "main.js": "/portfolio/static/js/main.95429820.js",
+    "static/media/nutriarepa.png": "/portfolio/static/media/nutriarepa.9ca6ab089411a1b5180d.png",
+    "static/media/parapente-chicamocha.png": "/portfolio/static/media/parapente-chicamocha.1660a7bb79a92b0bc27b.png",
+    "static/media/aviento.png": "/portfolio/static/media/aviento.963847143835769df83f.png",
+    "static/media/self.png": "/portfolio/static/media/self.9e9a2baa7fa21301baa5.png",
+    "index.html": "/portfolio/index.html",
+    "main.e2e0b88c.css.map": "/portfolio/static/css/main.e2e0b88c.css.map",
+    "main.95429820.js.map": "/portfolio/static/js/main.95429820.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2e0b88c.css",
+    "static/js/main.95429820.js"
+  ]
+}
