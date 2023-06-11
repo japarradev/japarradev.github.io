@@ -5,7 +5,8 @@ import Home from "./home/Home";
 import About from "./about/About";
 import Portfolio from "./portfolio/Portfolio";
 import {Route, Routes} from "react-router-dom";
-import {Box, Grid} from "@mui/material";
+import {Box, Grid, Hidden} from "@mui/material";
+import NavbarMobile from './NavbarMobile';
 
 export default function BaseLayout() {
    let [darkMode, setDarkMode] = useState(false);
@@ -32,7 +33,12 @@ export default function BaseLayout() {
          <Grid container display={'flex'} flexDirection={'column'} minHeight={'100vh'}
                justifyContent={'space-between'}>
             <Grid item>
-               <Navbar darkMode={darkMode} handleClick={handleToggleDarkMode}/>
+               <Hidden smDown>
+                  <Navbar darkMode={darkMode} handleClick={handleToggleDarkMode}/>
+               </Hidden>
+               <Hidden smUp>
+                  <NavbarMobile darkMode={darkMode} handleClick={handleToggleDarkMode}/>
+               </Hidden>
             </Grid>
             <Grid item flexGrow={1}>
                <Routes>
@@ -43,9 +49,8 @@ export default function BaseLayout() {
             </Grid>
             <Grid item>
                <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
-                    py={'1.5rem'} sx={{opacity: 0.7}} width={'100%'}>
-                  <p>template created with &hearts; by <a href={'https://paytonpierce.dev'}>Payton Pierce</a></p>
-                  <p>&copy; 2023</p>
+                    py={'0.7rem'} sx={{opacity: 0.5}} width={'100%'}>
+                  <p style={{fontSize:'8px'}}>template created with &hearts; by <a href={'https://paytonpierce.dev'}>Payton Pierce</a> &copy; 2023</p>
                </Box>
             </Grid>
          </Grid>

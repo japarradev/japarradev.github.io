@@ -7,10 +7,11 @@ import {info} from "../../info/Info";
 
 export default function About() {
     const firstName = info.firstName.toLowerCase()
+    const nickname  = info.initials.toLowerCase() 
 
     function aboutMeText() {
         return <>
-            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cat
+            <p><span style={{color: info.baseColor}}>{nickname} $</span> cat
                 about{firstName} </p>
             <p><span style={{color: info.baseColor}}>about{firstName} <span
                 className={Style.green}>(main)</span> $ </span>
@@ -21,7 +22,7 @@ export default function About() {
 
     function skillsText() {
         return <>
-            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd skills/tools
+            <p><span style={{color: info.baseColor}}>{nickname} $</span> cd skills/tools
             </p>
             <p><span style={{color: info.baseColor}}>skills/tools <span
                 className={Style.green}>(main)</span> $</span> ls</p>
@@ -38,7 +39,7 @@ export default function About() {
 
     function miscText() {
         return <>
-            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd
+            <p><span style={{color: info.baseColor}}>{nickname} $</span> cd
                 hobbies/interests</p>
             <p><span style={{color: info.baseColor}}>hobbies/interests <span
                 className={Style.green}>(main)</span> $</span> ls</p>
@@ -51,10 +52,12 @@ export default function About() {
     }
 
     return (
-        <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
-            <Terminal text={aboutMeText()}/>
-            <Terminal text={skillsText()}/>
-            <Terminal text={miscText()}/>
+        <Box component={'main'}>
+            <Box  display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
+                <Terminal text={aboutMeText()}/>
+                <Terminal text={skillsText()}/>
+                <Terminal text={miscText()}/>
+            </Box>
         </Box>
     )
 }
