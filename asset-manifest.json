@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.e2e0b88c.css",
-    "main.js": "/home/static/js/main.1125f34c.js",
-    "static/media/nutriarepa.png": "/home/static/media/nutriarepa.9ca6ab089411a1b5180d.png",
-    "static/media/parapente-chicamocha.png": "/home/static/media/parapente-chicamocha.1660a7bb79a92b0bc27b.png",
-    "static/media/aviento.png": "/home/static/media/aviento.963847143835769df83f.png",
-    "static/media/self.png": "/home/static/media/self.9e9a2baa7fa21301baa5.png",
-    "index.html": "/home/index.html",
-    "main.e2e0b88c.css.map": "/home/static/css/main.e2e0b88c.css.map",
-    "main.1125f34c.js.map": "/home/static/js/main.1125f34c.js.map"
+    "main.css": "/japarradev.github.io/static/css/main.e2e0b88c.css",
+    "main.js": "/japarradev.github.io/static/js/main.3b18579d.js",
+    "static/media/nutriarepa.png": "/japarradev.github.io/static/media/nutriarepa.9ca6ab089411a1b5180d.png",
+    "static/media/parapente-chicamocha.png": "/japarradev.github.io/static/media/parapente-chicamocha.1660a7bb79a92b0bc27b.png",
+    "static/media/aviento.png": "/japarradev.github.io/static/media/aviento.963847143835769df83f.png",
+    "static/media/self.png": "/japarradev.github.io/static/media/self.9e9a2baa7fa21301baa5.png",
+    "index.html": "/japarradev.github.io/index.html",
+    "main.e2e0b88c.css.map": "/japarradev.github.io/static/css/main.e2e0b88c.css.map",
+    "main.3b18579d.js.map": "/japarradev.github.io/static/js/main.3b18579d.js.map"
   },
   "entrypoints": [
     "static/css/main.e2e0b88c.css",
-    "static/js/main.1125f34c.js"
+    "static/js/main.3b18579d.js"
   ]
 }
