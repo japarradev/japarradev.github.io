@@ -7,6 +7,7 @@ import Portfolio from "./portfolio/Portfolio";
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid, Hidden} from "@mui/material";
 import NavbarMobile from './NavbarMobile';
+import Error404 from './Error404';
 
 export default function BaseLayout() {
    let [darkMode, setDarkMode] = useState(false);
@@ -45,6 +46,7 @@ export default function BaseLayout() {
                   <Route exact path={'/'} element={<Home/>}/>
                   <Route exact path={'/about'} element={<About/>}/>
                   <Route exact path={'/portfolio'} element={<Portfolio/>}/>
+                  <Route exact path={'*'} element = {<Error404/>}/>
                </Routes>
             </Grid>
             <Grid item>
